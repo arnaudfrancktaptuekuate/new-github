@@ -24,7 +24,7 @@ jobs:
         - name: delete docker images
           run: echo "docker rmi image id"
         - name: install docker
-          run: apt install docker.io -y
+          run: sudo apt install docker.io -y
 
         - name: run a docker container
           run: sudo docker run -it --name jenkins -p 8080:8080 jenkins/jenkins:latest
