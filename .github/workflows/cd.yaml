@@ -13,7 +13,7 @@ jobs:
           
 
         - name: update system 
-          run: apt update -y
+          run: sudo apt update -y
 
         - name: docker build image 
           run: echo "docker build -t my-app ."
