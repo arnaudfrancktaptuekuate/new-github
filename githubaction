@@ -1,0 +1,8 @@
+name: ci-test
+on: [push, commit]
+jobs:
+   first-job:
+       runs-on: ubuntu-latest
+       steps:
+       - name: clone code
+         run: echo "welcome to github"
