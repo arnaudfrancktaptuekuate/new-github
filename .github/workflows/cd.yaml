@@ -1,0 +1,21 @@
+name: my-first-github_action
+
+on: push
+jobs:
+    first-jobs:
+        runs-on: ubuntu-latest
+        steps:
+        - name: clone repository
+          run: echo "git clone https//wgu.edu/academy"
+
+        - name: performe software analysist security testing
+          run: echo "sonarqube"
+
+        - name: docker build image 
+          run: echo "docker build -t my-app ."
+
+        - name: docker push image
+          run: echo "docker push "
+
+        - name: delete docker images
+          run: echo "docker rmi image id"
